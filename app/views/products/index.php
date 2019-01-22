@@ -2,16 +2,12 @@
 <?php require APPROOT.'/views/layouts/includes/header.php'; ?>
 
 
-    <?php //foreach($products as $product) : ?>
+    <?php foreach($data['products'] as $product): ?>
+    
+        <?php echo $product->title; ?> <br>
+    
 
-      <?php //echo $product->title; ?>
-
-    <?php //endforeach; ?>
-
-    <?php echo 'robel' ?>
-
-
-    <?php echo $data['title']; ?>
+    <?php endforeach; ?>
 
      
 

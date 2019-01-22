@@ -3,19 +3,19 @@
 
     class Products extends Controller {
 
-        // public function __construct(){
+        public function __construct(){
 
-        //     //$this->postModel = $this->model('Post');
+            $this->productModel = $this->model('Product');
 
-        // }
+        }
 
         public function index(){
 
-            //$posts = $this->postModel->getPosts();
+            $products = $this->productModel->get_products();
 
             $data = [
-                'title' => 'Ecommerce without Framework'
-                //'posts' => $posts
+               // 'title' => 'Ecommerce without Framework'
+                'products' => $products
             ];
 
             $this->view('products/index', $data);
