@@ -11,6 +11,8 @@
 
         public function index(){
 
+            //Get all Products
+
             $products = $this->productModel->get_products();
 
             $data = [
@@ -19,6 +21,16 @@
             ];
 
             $this->view('products/index', $data);
+        }
+
+
+        public function details($id) {
+            // //Get Product Details
+            // $data['product'] = $this->Product_model->get_product_details($id);
+            
+            // //Load View
+            // $data['main_content'] = 'details';
+            // $this->load->view('layouts/main', $data);
         }
 
       
