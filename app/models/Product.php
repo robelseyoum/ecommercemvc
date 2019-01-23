@@ -32,6 +32,44 @@ class Product {
 
     }
 
+
+        
+
+    public function get_popular(){
+
+        $this->db->query("SELECT P.*, 
+                          COUNT(O.product_id) as total 
+                          FROM orders AS O 
+                          INNER JOIN products AS P
+                          on O.product_id = P.id
+                          GROUP BY O.product_id
+                          ORDER BY total DESC
+                          ");   
+        
+        $results = $this->db->resultSet();  
+        return $results;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

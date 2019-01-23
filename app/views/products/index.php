@@ -6,10 +6,13 @@
            
 
         <div class="col-md-4 game">
+
             <div class="game-price"> <?php echo $product->price; ?> </div>
             <a href="<?php echo URLROOT; ?>/products/details/<?php echo $product->id; ?>">
+                <?php require_once APPROOT.'/views/layouts/includes/sidebar.php'; ?>
                 <img src="<?php echo URLROOT; ?>/images/<?php echo $product->image; ?>"/>
             </a>
+
             <div class="game-title">
                 <?php echo $product->title; ?>
             </div>

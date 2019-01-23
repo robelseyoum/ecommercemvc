@@ -3,6 +3,7 @@
 
     //Load Config
     require_once 'config/config.php';
+    //require_once 'helpers/db_helper.php';
 
     //Load Libraries
     // require_once 'libraries/Core.php';
