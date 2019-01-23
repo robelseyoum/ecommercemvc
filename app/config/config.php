@@ -14,6 +14,7 @@
     
     //App root 
     define('APPROOT', dirname(dirname(__FILE__)));
+    //Users/robelseyoum/Documents/PHP_WebApps/traversymedia/ecommercemvc/app 
 
      //  $APPROOT2 = dirname(dirname(dirname(__FILE__)));
      // echo $APPROOT2;

@@ -37,7 +37,7 @@
     
     <div class="panel panel-default panel-list">
         <div class="panel-heading">
-            <h3 class="panel-title" Most Popular </h3>
+            <h3 class="panel-title"> Most Popular </h3>
         </div>
         <!-- List group -->
         <ul class="list-group">

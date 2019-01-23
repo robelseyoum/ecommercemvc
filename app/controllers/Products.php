@@ -26,11 +26,19 @@
 
         public function details($id) {
             // //Get Product Details
-            // $data['product'] = $this->Product_model->get_product_details($id);
+            $products = $this->productModel->get_product_details($id);
             
-            // //Load View
+            //Load View
             // $data['main_content'] = 'details';
             // $this->load->view('layouts/main', $data);
+
+            $data = [
+                'products' => $products
+            ];
+
+            $this->view('products/details', $data);
+
+
         }
 
       
